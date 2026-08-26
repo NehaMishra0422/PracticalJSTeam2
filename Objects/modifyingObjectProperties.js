@@ -15,7 +15,7 @@ console.log(obj);
 delete obj.job;
 console.log(obj);
 
-//copying object
+//copying object properties to another object
 let obj1 = obj;
 console.log(obj1);
 obj1.job = "Tester";
