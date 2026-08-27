@@ -16,7 +16,7 @@ emp1.designation();
 emp2.designation();
 
 //calculator using object method
-function calculator() {
+function Calculator() {    //here we are using capital C for constructor function
   this.sum = function sum(a,b){
         return a + b;
   } ,
@@ -30,7 +30,7 @@ this.div = function div(a, b){
     return a / b;
 }
 }
-const calc = new calculator()
+const calc = new Calculator()
 console.log("Sum" , calc.sum(50,30));
 console.log("Multiply", calc.mul(50,30));
 console.log("Divide" , calc.div(50,30));
