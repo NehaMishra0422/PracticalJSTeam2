@@ -42,7 +42,11 @@ else{
 palindrome("level");
 
 //ABCDE in pattern
-
+// A
+// AB
+// ABC
+// ABCD
+// ABCDE
 let newString = "";
 function pattern(string1){
     for(let i=0;i<string1.length;i++){
@@ -51,6 +55,20 @@ function pattern(string1){
     } 
 }
 pattern("ABCDE");
+
+//ABCDE pattern using String.fromCharCode()
+//String.fromCharCode() converts number in a character.
+// A=65, B=66, C=67, D=68, =69
+function stringPattern(){
+    for(let i=1;i<=5;i++){
+        let row8 = "";
+        for(let j=1;j<=i;j++){
+            row8+=String.fromCharCode(64 +j) + " ";
+        }
+        console.log(row8);
+    }
+}
+stringPattern();
 
 //lagest number in an array
 let arr = [20,40,60,30,55,90,99];
@@ -178,14 +196,14 @@ console.log("Pyramid");
 for(let i=1;i<=5;i++){
     let row7 = ""; 
 
-    //loop fpr spaces
+    //loop for spaces
     for(let j=1;j<=5-i;j++){
         row7 += " " ;   
     }
 
     //loop for stars
     for(let k=1;k<=i;k++){
-        row7 += "*" + " ";
+        row7 += "*" + " "  ;
         
     }
     console.log(row7);
