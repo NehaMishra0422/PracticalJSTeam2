@@ -167,3 +167,26 @@ for(let i=1;i<=5;i++){
     }
     console.log(row6);
 }
+
+//pyramid
+//    *
+//   * *
+//  * * *
+// * * * *
+//* * * * *
+console.log("Pyramid");
+for(let i=1;i<=5;i++){
+    let row7 = ""; 
+
+    //loop fpr spaces
+    for(let j=1;j<=5-i;j++){
+        row7 += " " ;   
+    }
+
+    //loop for stars
+    for(let k=1;k<=i;k++){
+        row7 += "*" + " ";
+        
+    }
+    console.log(row7);
+}
