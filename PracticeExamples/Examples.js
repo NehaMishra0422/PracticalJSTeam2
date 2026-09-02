@@ -100,6 +100,12 @@ smallestNum(arr1);
 // ****
 // ****
 // ****
+// 1st iteration -         2nd iteration -       3rd iteration -                4th iteration -
+// i=1                      i=2                     i=3                           i=4
+//  j=1 -> *                 j=1 -> **               j=1 -> ***                    j=1 -> ****
+//  j=2 -> *                 j=2 -> **               j=2 -> ***                    j=2 -> ****
+//  j=3 -> *                 j=3 -> **               j=3 -> ***                    j=3 -> ****
+//  j=4 -> *                 j=4 -> **               j=4 -> ***                    j=4 -> ****
 
 let n = 4;
 for (let i=1;i<=n;i++){
@@ -116,6 +122,7 @@ for (let i=1;i<=n;i++){
 // ***
 // ****
 // *****
+
 console.log("Right Triangle");
 for(let i=1;i<=5;i++){
     let row1 = "";
@@ -124,6 +131,14 @@ for(let i=1;i<=5;i++){
     }
     console.log(row1);
 }
+//here j will run depending on value of i
+//1st iteration     2nd iteration   3rd iteration    4th iteration     5th iteration
+// i=1               i=2             i=3               i=4              i=5
+// j=1 -> *          j=1 -> *        j=1 -> *          j=1 -> *         j=1 -> *
+//                   j=2 -> **       j=2 -> **         j=2 -> **        j=2 -> **
+//                                   j=3 -> ***        i=3 -> ***       j=3 -> ***
+//                                                     i=4 -> ****      j=4 -> ****
+//                                                                      j=5 -> *****
 
 //inverted triangle
 // *****
@@ -192,6 +207,22 @@ for(let i=1;i<=5;i++){
 //  * * *
 // * * * *
 //* * * * *
+//i=row ,j=space ,k=stars
+//1st iteration   2nd iteration   3rd iteration    4th iteration      5th iteration
+//i=1              i=2              i=3              i=4                 i=5
+//j=4 -> 4space    j=3 -> 3space    j=2 -> 2space    j=1 -> 1space       j=0 -> 0space
+//k=1->    *       k=1 ->   *       k=1 ->  *        k=1 -> *            k=1 ->*
+//prints           k=2 ->   * *     k=2 ->  * *      k=2 -> * *          k=2 ->* *
+//    *            prints           k=3 ->  * * *    k=3 -> * * *        k=3 ->* * *
+//                    *             k=4 -> * * * *   k=4 ->* * * *       k=4 ->* * * *
+//                   * *           prints                                k=5 ->* * * * *
+//                                   *                 prints                  prints
+//                                  * *                   *                      *
+//                                 * * *                 * *                    * *
+//                                                      * * *                  * * *
+//                                                     * * * *                * * * *
+//                                                                           * * * * * 
+
 console.log("Pyramid");
 for(let i=1;i<=5;i++){
     let row7 = ""; 
@@ -208,3 +239,88 @@ for(let i=1;i<=5;i++){
     }
     console.log(row7);
 }
+
+//floyds triangle
+// 1
+// 23
+// 456
+// 78910
+console.log("Floyd's Triangle");
+let num=1;
+for(let i=1;i<=4;i++){
+    let row8= " ";
+    for(j=1;j<=i;j++){
+        row8+= num ;
+        num+= 1;
+    }
+    console.log(row8);
+}
+
+//Repeated Alphabet pattern
+//A
+//BB
+//CCC
+//DDDD
+//EEEEE
+console.log("Repeated Alphabet Pattern");
+for(let i=1;i<=5;i++){
+    let row9 = " ";
+    for(let j=1;j<=i;j++){
+        row9+= String.fromCharCode(64+i);
+    }
+    console.log(row9);
+}
+
+//count vowels in a string
+let str1 = "Javascript";
+let count = 0;
+for(let i=0;i<str1.length;i++){
+    if(str1[i] === 'a' || str1[i] === 'i' || str1[i] === 'o' || str1[i] === 'u' || str1[i] === 'e'){
+           count++;      
+    } 
+}
+ console.log("Number of vowels in a given string is:" ,count); //Number of vowels in a given string is: 3
+
+ //count how many times character 'a' occurs
+ let str2= "Javascript Learning";
+ let count1 =0;
+ for(let i=0;i<str2.length;i++){
+    if(str2[i]=== 'a'){
+        count1++;
+    }
+ }
+ console.log("occurance of character 'a' :", count1); //occurance of character 'a' : 3
+
+ //Duplicate characters
+ //i loop is for current char
+ //j loop for char after the current char
+ //1st iteration
+ //i=0,j=1
+ //str3[0]===str3[1]
+ //j===a (X)
+ //j=2
+ //j===v(X) and so on
+ let str3 = "javascript";
+ for(let i=0;i<str3.length;i++){
+    for(let j=i+1;j<str3.length;j++){
+         if(str3[i]===str3[j]){
+            console.log("Duplicate char", str3[i]); //a
+            break;
+         }
+        }
+ }
+ 
+ //find second largest number
+ let arr2 = [10,20,5,25,65,55];
+ let largest = arr2[0];
+ let secondLargest = arr2[0];
+ for(let i=1;i<arr2.length;i++){
+    if(arr2[i]>largest){
+        secondLargest =largest;
+        largest = arr2[i];
+    }
+    else if(arr2[i]> secondLargest && arr2[i] !== largest){
+        secondLargest =  arr2[i];
+    }
+ }
+ console.log("Second Largest number is" , secondLargest); //55
