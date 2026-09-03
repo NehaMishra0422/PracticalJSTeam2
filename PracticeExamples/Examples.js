@@ -324,3 +324,31 @@ for(let i=0;i<str1.length;i++){
     }
  }
  console.log("Second Largest number is" , secondLargest); //55
+
+//  console.log("Diamond");
+// for(let i=1;i<=5;i++){
+//     let row10 = ""; 
+
+//     //loop for spaces
+//     for(let j=1;j<=5-i;j++){
+//         row10 += " " ;   
+//     }
+
+//     //loop for stars
+//     for(let k=1;k<=i;k++){
+//         row10 += "*" + " "  ;
+        
+//     }
+//     console.log(row10);
+// }
+// for(let i=4;i>=1;i++){
+//     let row10 = "";
+//  for(let j=1;j<i-1;j++){
+//     row10 = " ";
+//  }
+//   for (let k=1; k<=2*i-1;k++) {
+//         row10 += "*" + " ";
+//     }
+
+//     console.log(row10);
+// }
