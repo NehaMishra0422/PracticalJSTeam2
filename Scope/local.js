@@ -3,6 +3,7 @@
 //block scope
 if(true){
      let b ="Hello"; //block scope  //can only used inside the block
+     console.log(b); //Hello
  }
  console.log("Outer" , b); //ReferenceError: b is not defined , because b is defined inside the block
                           // b is block scope and we are accessing it outside the block.
