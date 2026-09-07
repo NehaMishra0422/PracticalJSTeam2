@@ -63,7 +63,7 @@ async function user() {
 }
 user();
 
-//Example 6
+//Example 6 - promise chaining
 async function userLogin(fname){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
