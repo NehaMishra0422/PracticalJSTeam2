@@ -1,7 +1,7 @@
 //example 1
 try {
     console.log("Execution starts here...");
-    //xyz;
+    //xyz; //ReferenceError: xyz is not defined
     console.log("Execution ends here...");
 }
 catch(err){
@@ -12,11 +12,11 @@ catch(err){
 function myFun(){
     let a = 500;
     try{
-        //let s = a.toUpperCase();
+        //let s = a.toUpperCase(); //TypeError: a.toUpperCase is not a function
         console.log("The value of variable a : " , a);
     }
     catch(e){
-        console.log("Error");
+        console.error("Error", e); //TypeError: a.toUpperCase is not a function
     }
 }
 myFun();
@@ -65,7 +65,7 @@ function check(age){
 //example 5
 function withdraw(balance,amount){
     if(amount>balance){
-        throw new Error("Insufficient balance");
+        throw new Error("Insufficient balance"); //this line means , manually creating and throwing error : custom error
     }
     return balance-amount;
 }
