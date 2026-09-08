@@ -1,4 +1,4 @@
-//Arrow Function -> shorhand for writing function
+//Arrow Function -> shorthand for writing function
 
 //Example 1 -> no parameter
 const message = ()=>{
