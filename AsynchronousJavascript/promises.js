@@ -1,6 +1,6 @@
 //Promises -. an object that represents eventual result of an asynchronous operation
 //Promise is a solution for callback hell
-//resolve and reject are predefine din JS Engine
+//resolve and reject are predefined in JS Engine
 
 //simple example
 let promise = new Promise((resolve, reject) => {

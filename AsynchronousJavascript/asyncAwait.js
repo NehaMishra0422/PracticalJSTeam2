@@ -64,42 +64,42 @@ async function user() {
 user();
 
 //Example 6 - promise chaining
-async function userLogin(fname){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+async function userLogin(fname) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             resolve("1. User Logged in")
-        },4000);
+        }, 4000);
     })
 }
-async function getProducts(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+async function getProducts() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             resolve("2. Product fetched")
-        },4000);
+        }, 4000);
     })
 }
-async function addToCart(product){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+async function addToCart(product) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             resolve("3. Product added to cart")
-        },4000);
+        }, 4000);
     })
 }
-async function makePayment(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+async function makePayment() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             resolve("4. Payment successfull")
-        },4000);
+        }, 4000);
     })
 }
-async function placeOrder(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
+async function placeOrder() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             resolve("5. Congratulations! Order is Placed successfully")
-        },4000);
+        }, 4000);
     })
 }
-async function orderProduct(){
+async function orderProduct() {
     //let fName = "Shipra Shukla";
     //let product = "Laptop";
     let uLogin = await userLogin("Shipra Shukla");

@@ -24,7 +24,7 @@ function subtraction(a, b) {
 calculator(10, 15, addition);
 calculator(55, 25, subtraction);
 
-//Example 2
+//Example 3
 console.log("Hi , this side Neha Mishra");
 console.log("Currently learning Javascript");
 
@@ -41,7 +41,7 @@ console.log("Example of callback function");
 //callback hell --> multiple callbacks nested inside each other, making the code difficult to read, understand, and maintain.
 //Also known as pyramid of doom
 
-//Example - placing an order
+//Example 4- placing an order
 function login(user, callback){
     console.log("1. User get Logged in");
     callback();
