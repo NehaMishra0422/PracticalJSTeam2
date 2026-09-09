@@ -41,7 +41,7 @@ for (let [value] of info){
     console.log("Value :",value); //Value : Name
 }                                 //Value : Location
 
-//array map()
+//array map() - creates a new array from calling a function for every array element.
 const numbers = [65, 44, 12, 4];
 const newArr = numbers.map(myFunction)
 
