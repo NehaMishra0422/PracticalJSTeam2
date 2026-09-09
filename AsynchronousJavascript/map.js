@@ -40,3 +40,12 @@ for (let [key] of info){
 for (let [value] of info){
     console.log("Value :",value); //Value : Name
 }                                 //Value : Location
+
+//array map()
+const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(myFunction)
+
+function myFunction(num) {
+  return num * 10;
+}
+console.log(newArr); //[ 650, 440, 120, 40 ]
