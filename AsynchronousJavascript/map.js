@@ -43,6 +43,7 @@ for (let [value] of info){
 
 //array map() - creates a new array from calling a function for every array element.
 //array method 
+//always creates a new array
 
 const numbers = [65, 44, 12, 4];
 const newArr = numbers.map(myFunction)
