@@ -64,8 +64,8 @@ console.log(result); //[ 'NEHA', 'RAHUL', 'AMIT' ]
 //get length of each names
 let names1 = ["Neha", "Rahul", "Amit"];
 
-let result1 = names.map((name1) => {
-    return name1.length;
+let result1 = names.map((names1) => {
+    return names1.length;
 });
 
 console.log(result1); //[ 4, 5, 4 ]
@@ -73,3 +73,14 @@ console.log(result1); //[ 4, 5, 4 ]
 //as arrow fun
 let result2 = numbers.map(num => num * 2);
 console.log(result2); //[ 130, 88, 24, 8 ]
+
+//using object
+let users = [
+    { name: "Neha", age: 31 },
+    { name: "Rahul", age: 28 },
+    { name: "Amit", age: 25 }
+];
+
+let names3 = users.map(user => user.name);
+
+console.log(names3); //[ 'Neha', 'Rahul', 'Amit' ]
