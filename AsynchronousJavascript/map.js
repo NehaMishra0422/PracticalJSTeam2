@@ -51,3 +51,25 @@ function myFunction(num) {
   return num * 10;
 }
 console.log(newArr); //[ 650, 440, 120, 40 ]
+
+//convert name to uppercase
+let names = ["Neha", "Rahul", "Amit"];
+
+let result = names.map((name) => {
+    return name.toUpperCase();
+});
+
+console.log(result); //[ 'NEHA', 'RAHUL', 'AMIT' ]
+
+//get length of each names
+let names1 = ["Neha", "Rahul", "Amit"];
+
+let result1 = names.map((name1) => {
+    return name1.length;
+});
+
+console.log(result1); //[ 4, 5, 4 ]
+
+//as arrow fun
+let result2 = numbers.map(num => num * 2);
+console.log(result2); //[ 130, 88, 24, 8 ]
