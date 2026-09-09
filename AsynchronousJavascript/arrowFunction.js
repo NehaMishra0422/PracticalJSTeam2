@@ -1,4 +1,6 @@
 //Arrow Function -> shorthand for writing function
+//arrow function without {} -> const square = num => num*num; // no return required
+//arrow function with {} -> const square = num => {return num*num}; //return required because object is created
 
 //Example 1 -> no parameter
 const message = ()=>{

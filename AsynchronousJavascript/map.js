@@ -85,3 +85,13 @@ let users = [
 let names3 = users.map(user => user.name);
 
 console.log(names3); //[ 'Neha', 'Rahul', 'Amit' ]
+
+//map() chaining
+let nums = [1,3,5,7,9,11];
+let output =  nums.map((num=> num * 10)).map((num=> num + 1));
+console.log(output); //[ 11, 31, 51, 71, 91, 111 ]
+
+/* Here value of first map will be transfered to second map
+like : first map- num * 10 => 1 * 10 => 10
+       second map => num + 1 => 10 + 1 => 11
+*/       
