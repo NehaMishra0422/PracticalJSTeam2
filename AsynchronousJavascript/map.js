@@ -65,8 +65,8 @@ console.log(result); //[ 'NEHA', 'RAHUL', 'AMIT' ]
 //get length of each names
 let names1 = ["Neha", "Rahul", "Amit"];
 
-let result1 = names.map((names1) => {
-    return names1.length;
+let result1 = names.map((name) => {
+    return name.length;
 });
 
 console.log(result1); //[ 4, 5, 4 ]
