@@ -1,6 +1,6 @@
-//Map -> A Map stores data in key-value pairs.
+//Map()-> A Map stores data in key-value pairs.
 let info = new Map(); //creates map
-//here in map, .set is used to add values
+//here in Map(), .set is used to add values
 info.set("Name", "Neha Mishra");
 info.set("isEmployed", "true");
 info.set("Location", "Ghaziabad");
@@ -42,6 +42,8 @@ for (let [value] of info){
 }                                 //Value : Location
 
 //array map() - creates a new array from calling a function for every array element.
+//array method 
+
 const numbers = [65, 44, 12, 4];
 const newArr = numbers.map(myFunction)
 
