@@ -41,3 +41,5 @@ for(let value of num()){
                         //20
                         //30
 }
+
+//return() and throw() method left
