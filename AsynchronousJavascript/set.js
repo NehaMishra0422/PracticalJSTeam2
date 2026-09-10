@@ -1,4 +1,4 @@
-//Set - collection of unique value that menas it doen't allow duplicates
+//Set - collection of unique value that means it doesn't allow duplicates
 
 //example 1 - normal array
 let arr = new Set([30,20,5,10,30,5,5]);

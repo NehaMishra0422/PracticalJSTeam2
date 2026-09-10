@@ -41,3 +41,56 @@ console.log(userBooks2);
   }
 ]
 */  
+
+//find even numbers
+let arr = [10,25,30,55,50,40];
+let evenNum = arr.filter((num)=>{
+  if(num%2 === 0){
+    return num;
+  }
+});
+console.log("Even numbers are :" ,evenNum); //[ 10, 30, 50, 40 ]
+
+//find odd numbers
+let arr1 = [11,35,67,50,20,10];
+let oddNum = arr1.filter((num)=>{
+  if(num%2 !== 0){
+    return num;
+  }
+})
+//console.log(`Odd Numbers are : ${oddNum}`); //Odd Numbers are : 11,35,67
+console.log("odd numbers are :" , oddNum); //odd numbers are : [ 11, 35, 67 ]
+
+//remove particluar value
+let fruits = [ "Apple", "Banana", "Orange" , "Kiwi", "Apple"];
+let newFruits = fruits.filter((value) => {
+  if (value !== 'Apple'){
+    return value;
+  }
+})
+console.log(newFruits); //[ 'Banana', 'Orange', 'Kiwi' ]
+
+//filter active users
+let users = [
+    { name: "Neha", active: true },
+    { name: "Shipra", active: false },
+    { name: "Avnish", active: true },
+    { name: "Sharad", active: false },
+    { name: "Abhinav", active: false }
+
+];
+let u = users.filter((user)=>{
+  if(user.active !== false){
+    return user;
+  }
+})
+console.log(u); //[ { name: 'Neha', active: true }, { name: 'Avnish', active: true } ]
+
+//Get name starts with A
+let names = ['Neha', 'Shipra','Avnish','Sharad','Abhinav'];
+let newName = names.filter((name)=>{
+  if(name.startsWith('A')){
+    return name;
+  }
+})
+console.log("Names starting with A :", newName); //Names starting with A : [ 'Avnish', 'Abhinav' ]
