@@ -24,4 +24,5 @@ adding at starting is not possibe because JavaScript doesn't know where the rest
 ex : function test(...rest,a,b){
 console.log(rest);
 }
+but in above examples there is only one parameter so it is valid
 */
