@@ -25,7 +25,9 @@ console.log(newNum); //[ 5, 10, 20, 30, 40 ]
 
 //copy an array
 let arr1 = [10,20,30];
+console.log(...arr1);  //10 20 30
 let arr2 = [...arr1];
+console.log(arr2);
 let newArr = arr2.push(60);
 console.log(arr2); //[ 10, 20, 30, 60 ]
 
