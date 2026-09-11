@@ -17,7 +17,7 @@ console.log(sum(10, 20, 30)); //60
 
 /* IMP NOTE :
 the rest parameter should be added last one
-ex : function test(1,b,...rest){
+ex : function test(a,b,...rest){
 console.log(rest);
 }
 adding at starting is not possibe because JavaScript doesn't know where the rest collection should stop.
