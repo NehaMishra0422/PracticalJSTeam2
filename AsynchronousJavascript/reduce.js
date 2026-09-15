@@ -65,7 +65,7 @@ let result = [
  console.log(count); //{ pass: 3, fail: 2 }
  /* 1st iteration -----
  output = {} , state = {name: 'Neha, status : 'pass'}, state.status = pass
- output[pass] = (pass || 0) + 1, 0 + 1 => 1  
+ output[pass] = (output['pass'] || 0) + 1 => (undefined || 0)+1 => 0 + 1 => 1  
  output = {pass : 1}
  2nd iteration -----
  output = {pass : 1}, state = {name :'Shipra',status : 'pass'},state.status =pass
