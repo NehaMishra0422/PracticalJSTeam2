@@ -20,7 +20,7 @@ class Developer extends Employee {
     }
 }
 class Tester extends Employee {
-    test(){
+    test() {
         console.log("Tester Test application");
     }
 }
@@ -76,16 +76,17 @@ console.log(c.color);
 console.log(c.brand);
 
 //Example 
-class Animal{
-    eat(){
+class Animal {
+    eat() {
         console.log("Animal is eating");
     }
 }
-class Dog extends Animal{
-        eat(){
+class Dog extends Animal {
+    eat() {
         console.log("Dog is eating");
         super.eat();
-        }
+    }
 }
 let dog = new Dog();
 dog.eat();
+

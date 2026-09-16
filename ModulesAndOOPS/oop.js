@@ -28,4 +28,37 @@ user1.logout();
 
 //Here in above example, user -> class, user1 -> Object, name & password -> properties, login() & logout() -> methods
 
+//Default constructor - doesn't take any parameter
 
+class Car {
+    constructor(){
+        this.brand = "Mahindra";
+    }
+}
+let c = new Car();
+console.log(c.brand);   //Mahindra
+
+//Parameterized Constructor - that takes parameters
+
+class Student {
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+}
+let student1 = new Student("Neha","31");
+console.log(student1.name);
+console.log(student1.age);
+let student2 =  new Student("Shipra", "30");
+console.log(student2.name);
+console.log(student2.age);
+
+//Empty constructor - no code inside the constructor
+
+class Room {
+    hasObject(){
+        console.log("Table is inside the Room");
+    }
+}
+let room =  new Room();
+room.hasObject();

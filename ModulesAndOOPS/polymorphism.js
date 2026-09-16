@@ -51,3 +51,23 @@ let mahindra = new Mahindra();
 mahindra.color();                   //The Mahindra xuv is of color blue
 let hondacity = new HondaCity();
 hondacity.color();                  //The Honda City car is of Silver color
+
+
+//Method overloading - means having multiple methods with same name but different parameters
+//but JS doesn't support method overloading.
+// if you create two similar methods with different parameters,the last method replaces the previous one.
+
+//Example 
+class Calculator{
+    add(a,b){
+        return a + b;
+    }
+    add(a,b,c){
+        return a + b + c;
+    }
+}
+let calc = new Calculator();
+console.log(calc.add(10,20));  //NaN , because first method got replaced with the second method and 
+                                       //second method have 3 parameters, so when calc.add(10,20) calls
+                                       //it get replaced by add(a,b,c)
+                                       //a= 10,b=20, c= undefined , 10 + 20 + undefined = NaN
