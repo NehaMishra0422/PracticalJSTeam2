@@ -22,6 +22,8 @@ dog.makeSound();   //Dog Barks
 let cat = new Cat();
 cat.makeSound();    //Cat Meow
 
+//in above example we are using same method in parent and child class.. but it has different behavior
+
 //Example 2
 class car {
     color(){

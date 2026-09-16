@@ -1,5 +1,6 @@
 //Protected - The property/method can be used inside the parent class and its child classes, but is not intended to be used directly from outside.
-//created using underscore ( _ )
+//created using underscore ( _ ), the underscore is only a convention 
+//with protected property or method, it doesn't mean that we can't access it from outside the class.
 
 //Example 
 class Employee {
@@ -15,7 +16,7 @@ class Tester extends Employee {
 }
 let tester = new Tester("Neha");
 tester.checkSalary();  //55000
-console.log(tester._salary); //55000 , this will work becase salary us protected not private 
+console.log(tester._salary); //55000 , this will work becase salary is protected not private 
 
 // so in above, the child class can access salary because salary is not private
 

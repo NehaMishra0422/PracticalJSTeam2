@@ -1,4 +1,8 @@
 //Static Method --> belongs to class
+//why to use static? suppose there are 100 of employees in a company .. each employee has their name, designation,salary etc
+//but one common is Company name, so in that case we don't need to store company name seperatly for each employee
+//we can create one property which is static .
+//for calling static property we don't need to create object. Calling it direclty using class will work
 
 //Example
 class Employee {

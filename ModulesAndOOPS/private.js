@@ -1,6 +1,6 @@
 //private - A property or method can be accessed only from inside the class.
 //private properties or private methods are created using #.
-//why we make private property -  we don't want tsomeone from outside the class make change or see peroperty directly to the property
+//why we make private property -  we don't want someone from outside the class make change or see property directlys
 
 //Example - private property
 class Employee {
@@ -14,7 +14,7 @@ emp.checkSalary();
 //console.log(emp.#salary); //SyntaxError: Private field '#salary' must be declared in an enclosing class
 
 //Example - Private property with a method
-// with public method, we can access or modigy private data
+// with public method, we can access or modify private data
 
 class Employee1{
     #salary = 50000;
@@ -22,7 +22,7 @@ class Employee1{
         console.log(this.#salary);
     }
     increaseSalary(amount){
-        this.#salary = this.#salary + amount;
+        this.#salary = this.#salary + amount;    // here we are modifying salary
     }
 }
 let emp1 = new Employee1();
