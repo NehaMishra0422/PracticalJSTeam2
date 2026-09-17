@@ -1,4 +1,4 @@
-import {College} from "./college.js";
+const test = require("./college.js");
 
 let col = new College();
 col.collegeName();  //Name of the college is : RKGITM

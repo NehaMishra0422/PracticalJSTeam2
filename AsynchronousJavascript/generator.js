@@ -80,6 +80,7 @@ function* num(){
         }
     }
 }
+//direct passing data
 let n= num();
 console.log(n.next().value);
 console.log(n.next().value);
@@ -129,3 +130,25 @@ Currently learning topic :  Generators
 here first it will pause and give value ie Learning Javascript
 then take valuse from next("Generators") sends back to generator
 */
+
+//Example 2
+function* getData(){
+    yield "Neha Mishra";
+    yield "QA Tester";
+    yield "Learning Javascript";
+}
+for(let value of getData()){
+    console.log(value);
+}
+
+//Example
+function* odd(){
+    for(let i =0;i<=10;i++){
+        if(i%2!==0){
+            yield i;
+        }
+    }
+}
+for (let o of odd()){
+    console.log(o);
+}
