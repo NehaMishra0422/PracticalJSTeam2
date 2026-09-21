@@ -48,7 +48,7 @@
 
 /*WEBSITE USED : https://www.amazon.in/
 
-A simple example to mek it under stand
+A simple example to make it understand
 <div>
     <span>1</span>
     <span>2</span>

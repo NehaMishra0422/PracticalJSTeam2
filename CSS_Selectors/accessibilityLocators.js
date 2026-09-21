@@ -42,7 +42,7 @@ await page.getByPlaceholder("Search Amazon.in").fill("Mobile");
 Sign in page - password
 await page.getByText("Password");
 
-5. getByAltText()
+5. getByAltText() -> used to find elements by their alt attribute, mostly images
 
 WEBSITE USED : https://www.flipkart.com/
 flipkart  yellow button

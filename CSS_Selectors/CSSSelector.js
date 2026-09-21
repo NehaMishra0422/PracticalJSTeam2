@@ -124,6 +124,8 @@ selects the search icon
  form > div:nth-of-type(2)
 
 13. :nth-child()  : is used to select an element based on its position among all its siblings.
+
+https://www.amazon.in/ref=nav_logo
 .a-carousel > li:nth-child(2)
 
 difference between :nth-child() & :nth-of-type()
@@ -139,3 +141,5 @@ difference between :nth-child() & :nth-of-type()
 
 :nth-child() -> .a-section > a:nth-child(2)   --> Today's deal
 :nth-of-type() -> .a-section > a:nth-of-type(2) --> Your Orders
+
+*/
