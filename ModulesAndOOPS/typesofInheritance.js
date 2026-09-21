@@ -70,8 +70,9 @@ scorpio.start();
 scorpio.stops();
 scorpio.travel();
 
+
 //4. Multiple Inheritance - one child class inherits from multiple parents.
-//JS doesn't support this directly, this can be acieved by using mixins
+//JS doesn't support this directly, this can be achieved by using mixins
 //Mixins - a way to give a class additional methods or properties from another object/class without using normal inheritance.
 
 //Example

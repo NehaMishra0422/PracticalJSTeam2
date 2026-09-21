@@ -76,7 +76,7 @@ WEBSITE USED : https://datatables.net/examples/core/basic_init/zero_configuratio
 
 3. select particular page 
 <<  <  1  2  3  4  5  6  >  >>
-1   2  2  3  4  5  6  7  8  9
+1   2  3  4  5  6  7  8  9  10
 
 .dt-paging .dt-paging-button:nth-of-type(6)     (selects page 4)
 

@@ -1,6 +1,6 @@
 //private - A property or method can be accessed only from inside the class.
 //private properties or private methods are created using #.
-//why we make private property -  we don't want someone from outside the class make change or see property directlys
+//why we make private property -  we don't want someone from outside the class make change or see property directly
 
 //Example - private property
 class Employee {

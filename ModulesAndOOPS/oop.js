@@ -28,15 +28,17 @@ user1.logout();
 
 //Here in above example, user -> class, user1 -> Object, name & password -> properties, login() & logout() -> methods
 
-//Default constructor - doesn't take any parameter
+//Default constructor - doesn't take any parameter no constructor is written, 
+// JS automatically provides constructor
+//no code inside the constructor
 
 class Car {
-    constructor(){
-        this.brand = "Mahindra";
+    brand(){
+        console.log("Car name is Mahindra");
     }
 }
 let c = new Car();
-console.log(c.brand);   //Mahindra
+c.brand();   //Car name is Mahindra
 
 //Parameterized Constructor - that takes parameters
 
