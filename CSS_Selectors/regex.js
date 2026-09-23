@@ -104,19 +104,25 @@ Ex - Neha | Shipra , means find Neha or Shipra
 1. Find text Electronics
 Go to Browser console,
 type 
-const text = document.body.innerText
+const test = document.body.innerText
 text.match(/Electronics/g)
 gives result 6
 
-text.match(/Amazon/g)
+test.match(/Amazon/g)
 
 here 'g' means find all matches
 
+document.body.innerText -> an expression to get visible text from the entire webpage from Browser console.
+document → represents the whole HTML page
+body → represents the <body> section of the page
+innerText → gets the text that is visible to the user
+
+
 2. Find prices 
-text.match(/₹\d+/g)
+test.match(/₹\d+/g)
 
 3. find exaclty 4 digits
-text.match(/\d{4}/)
+test.match(/\d{4}/)
 
 4. Find Order ID's from Order page of Amazon
 regex = /\d{3}-\d{7}-\d{7}/g

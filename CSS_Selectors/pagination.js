@@ -85,14 +85,22 @@ WEBSITE USED : https://datatables.net/examples/core/basic_init/zero_configuratio
 .dt-paging .dt-paging-button:nth-of-type(10)    (selects >>)
 or
 .dt-paging .dt-paging-button:last-child          (selects >>)
+.dt-paging .dt-paging-button[data-dt-idx="last"]  (selects >>)
 
 5. first page
 .dt-paging .dt-paging-button:nth-of-type(1)    (selects <<)
 or
 .dt-paging .dt-paging-button:first-child        (selects <<)
+.dt-paging .dt-paging-button[data-dt-idx="first"]    (selects <<) 
 
 6. using aria label
-.dt-paging .dt-paging-button[aria-label="Previous"]
+.dt-paging .dt-paging-button[aria-label="Previous"]    (selects <)
+.dt-paging .dt-paging-button[aria-label="Next"]         (selects >)
+
+7. to select current page
+.dt-paging .dt-paging-button[data-dt-idx="1"]   [page 2]
+
+
 
 */
 
