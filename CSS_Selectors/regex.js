@@ -105,7 +105,9 @@ Ex - Neha | Shipra , means find Neha or Shipra
 Go to Browser console,
 type 
 const test = document.body.innerText
-text.match(/Electronics/g)
+
+
+test.match(/Electronics/g)
 gives result 6
 
 test.match(/Amazon/g)
@@ -145,6 +147,8 @@ test.match(/\d{4}/)
 
 8. Find any product TIED or ENVY
 test.match(/TIED|ENVY/g)
+
+more examples
 
 
 */

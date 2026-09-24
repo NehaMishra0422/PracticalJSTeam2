@@ -31,4 +31,8 @@ ID -> a-autoid-1-announce
 
 #a-autoid-1-announce.a-button-text
 
+
+6. class + attribute : Amazon search icon
+.nav-input[type="submit"]
+
 */
