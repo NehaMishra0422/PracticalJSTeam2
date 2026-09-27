@@ -27,8 +27,12 @@ console.log(email.match(/[A-Za-z]+@.*/g));
 let price = ['₹1499', '₹2,999', '₹4999.45'];
 console.log(price[0].match(/₹\d{4}/g));
 //output - [ '₹1499' ]
+console.log(price[1].match(/₹\d{1},\d{3}/g));
+//Or
 console.log(price[1].match(/₹\d{1,3},\d{3}/g));
 //output - [ '₹2,999' ]
+console.log(price[2].match(/₹\d{4}.\d{2}/g));
+//or
 console.log(price[2].match(/₹\d{1,4}.\d{2}/g));
 //[ '₹4999.45' ]
 
@@ -37,12 +41,14 @@ let price1 = ['₹1499', '₹2999', '₹4999.45'];
 console.log(price1.map(p => p.match(/₹\d{4}/g)));
 //output - [ [ '₹1499' ], [ '₹2999' ], [ '₹4999' ] ]
 //first - ₹1499.match(/₹\d{4}/g), -> [₹1499].....so on
+//p ->variable representing each element in an array
 
 let date = '24 september 2026';
 console.log(date.match(/\d{4}/g));  //[ '2026' ]
 
 let product = ['Samsung' , 'Nokia' , 'Iphone'];
 console.log(product.map(m=> m.match(/Poco|Iphone/g) )); //[ null, null, [ 'Iphone' ] ]
+//m-> variable representing each element in an array
 
 let email1 = 'Contact at neham@mindfiresolutions.com or nemishra2295@gmail.com';
 console.log(email1.match(/\w+@.\w+.\w+/g));
