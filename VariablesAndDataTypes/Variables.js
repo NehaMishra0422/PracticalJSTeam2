@@ -47,9 +47,20 @@ function fun3(){
 }
 fun3();
 
-//one more example
+//one more example - global scope
 function fun5(){
      const n = "abc";
     console.log(n);
 }
 fun5();
+
+//block scope
+function fun4() {
+    if (true) {
+        const z = 565;
+        console.log(z); // 565
+    }
+
+    console.log(z); //ReferenceError, z is not defined
+}
+fun4();

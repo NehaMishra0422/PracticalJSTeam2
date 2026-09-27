@@ -8,7 +8,7 @@ if (age>=18){
 let exp = "8 years";
 let skill = "Javascript + Playwright";
 if( exp === "8 years" && skill === "Javascript + Playwright"){
-    console.log("Not Eligible for applying for the job");
+    console.log("Eligible for applying for the job");
 }
 
 //check whether the person is eligible for travelling or not

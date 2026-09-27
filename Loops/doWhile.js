@@ -1,4 +1,4 @@
-//it will execute atlease once regardless of the condition is true or false
+//it will execute atleast once regardless of the condition is true or false
 
 //print 1 to 5 numbers
 let num = 1;
