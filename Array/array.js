@@ -11,7 +11,7 @@ console.log(sports[5]); //undefined
 //accessing array
 console.log("MARKS = " , marks.length); //8
 console.log("MARKS = " , marks[5]); // 50
-console.log("MARKS = " , marks[8]); //undefined bcoz index 8 doen't exist
+console.log("MARKS = " , marks[8]); //undefined bcoz index 8 doesn't exist
 
 //replacing array value
 let arr = [10,20,40,50,90];

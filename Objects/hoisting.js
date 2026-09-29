@@ -17,7 +17,7 @@ console.log(letHoisted); //doesn't execute because of the error above
 
 //const hoisting
 console.log(constHoisted); //ReferenceError: Cannot access 'constHoisted' before initialization
-const constHoisted = "Example of const Hoisting"; //ReferenceError: Cannot access 'constHoisted' before initialization
+const constHoisted = "Example of const Hoisting"; 
 console.log(constHoisted); //doesn't execute because of the error above
 
 //function hoisting --> completely hoisted,can be called before declaration

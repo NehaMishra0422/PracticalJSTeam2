@@ -89,10 +89,11 @@ console.log(capLetters.match(/[a-z]/g));
 // ]
 
 let amount = "prices are ₹999.50, ₹2,499.99 and ₹100.00";
-console.log(amount.match(/₹[\d,]+.\d{2}/g));
+console.log(amount.match(/₹[\d,]+\.\d{2}/g));
 //output- [ '₹999.50', '₹2,499.99', '₹100.00' ]
-//[\d,] -> \d, digita from 0-9 and with comma
+//[\d,] -> \d, digits from 0-9 and with comma
 //[\d,]+ - repeating pattern
+// \. -> actual .
 
 let url = "Visit https://google.com and http://amazon.in";
 console.log(url.match(/https?:\/\/\S+/g));
@@ -113,4 +114,8 @@ console.log(repeat.match(/(.)\1/g));
 
 //() -> capture/group that char
 // . any single char
-// \1 -> same character again
+//(.) -> so it means take any char and remember it
+// \1 -> Match exactly the same character that was captured in group 1
+
+let sameChar = "Google Toogle Giggle ";
+console.log(sameChar.match(/(.)\1/g));   //[ 'oo', 'oo', 'gg' ]

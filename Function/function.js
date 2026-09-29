@@ -1,4 +1,5 @@
 //function : block of code that performs specified task and can be invoked anytime whenever needed
+//It avoid code duplication
 
 //print name : without parameter & argument
 function fullName(){
@@ -144,3 +145,38 @@ let mul = (num1,num2) =>{
 }
 let n = mul(5,8);
 console.log("Multiplication of 2 numbers" , n);
+
+//Return statement
+//Return - The return statement is used inside a function to send a value back to the place where the function was called.
+//function does some work -> return gives the result back
+
+//Example 1
+function add2(a, b) {
+    return a + b;  //return the value back
+}
+let result1 = add2(10, 20); // to here
+console.log(result1); // 30
+
+//why do we need return?
+function add1(a,b){
+    console.log(a+b);
+}
+let output = add1(30,40);
+console.log(output);
+//70
+//undefined
+//this is because console.log will only prints the value, it will not return bvack the value
+
+//return stops the function
+function checkAge(age){
+    if (age>18){
+        return "Adult";
+    }
+    return "Minor";
+}
+let a = checkAge(16);
+console.log(a);  //Minor
+//let a = checkAge(30);
+//console.log(a) // Adult // once return reacched here it will stop and will not go to return 'Minor'
+//if after return console.log is written it will not print anything
+//return can return different types like boolean,string,integer,array

@@ -32,8 +32,8 @@ console.log(mobile); //Iphone
 console.log(newMobile); //hon ,it will not give error as because end number is greater than string length
 console.log(newMobile1); //hone 
 console.log(newMobile2); //n , //I  p  h  o  n  e  //here -2 will convert into 4 and ans is n
-                                //  0  1  2  3  4  5    //negative index -> positive index
-                                //  -6 -5 -4 -3 -2 -1 
+                              // 0  1  2  3  4  5    //negative index -> positive index
+                            //  -6 -5 -4 -3 -2 -1 
 console.log(newMobile3); //empty string, it doesn't swap index
 
 //.charAt(idx) - give character at the index

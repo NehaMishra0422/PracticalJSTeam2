@@ -8,7 +8,7 @@ console.log(reversed); //tpircsavaJ
 
 //revers string using built in function
 // let s = "Javascript";
-// console.log(s.split("").join().reverse()); //tpircsavaJ
+// console.log(s.split("").reverse().join("")); //tpircsavaJ
 //fist it will split the sting into an array of char, then it will reverse the array and join the array.
 
 //revese using fuction
@@ -100,12 +100,12 @@ smallestNum(arr1);
 // ****
 // ****
 // ****
-// 1st iteration -         2nd iteration -       3rd iteration -                4th iteration -
-// i=1                      i=2                     i=3                           i=4
-//  j=1 -> *                 j=1 -> **               j=1 -> ***                    j=1 -> ****
-//  j=2 -> *                 j=2 -> **               j=2 -> ***                    j=2 -> ****
-//  j=3 -> *                 j=3 -> **               j=3 -> ***                    j=3 -> ****
-//  j=4 -> *                 j=4 -> **               j=4 -> ***                    j=4 -> ****
+// 1st iteration -      2nd iteration -      3rd iteration -         4th iteration -
+// i=1                   i=2                   i=3                      i=4
+//  j=1 -> *              j=1 -> *              j=1 -> *                  j=1 -> *
+//  j=2 -> **             j=2 -> **             j=2 -> **                 j=2 -> **
+//  j=3 -> ***            j=3 -> ***            j=3 -> ***                j=3 -> ***
+//  j=4 -> ****           j=4 -> ****           j=4 -> ****               j=4 -> ****
 
 let n = 4;
 for (let i=1;i<=n;i++){
