@@ -172,3 +172,33 @@ let object = {
 for(let key in object){
     console.log("Key" ,key ,"value" ,object[key]);
 }
+
+
+//count duplicate characters in a string
+let str3 = "javascript";
+let count1 =0;
+for(let i=0;i<=str3.length;i++){
+    if(str3[i]=== 'a'){
+        count1++;
+    }
+}
+console.log(count1);
+
+//largest number in a array
+// let arr4 = [25,55,75,90,15];
+// let largest1 = arr4[0];
+// for (let i=0;i<=arr4.length;i++){
+//     if(arr4[i]>largest1){
+//         largest1 = arr4[i];
+//     }
+// }
+// console.log(largest1);
+
+let arr4 = [25,55,75,90,15];
+let largest1 = arr4[0];
+for(let num of arr4){
+    if(arr4[num]>largest1){
+        largest1 = arr4[num];
+    }
+}
+console.log(arr4[num]);

@@ -2,31 +2,45 @@
 let n =25;
 let a =70.5;
 console.log(n,a);
+console.log(typeof n);
+console.log(typeof a);
 
 //string
 let name = "Neha Mishra";
 let str = 'JS training';
 console.log(name);
 console.log(str);
+console.log(typeof str);
 
 //boolean
 let bool = true;
+console.log(bool);
+console.log(typeof bool);
 
 //undefined
 let d ;
 console.log(d);
+console.log(typeof d);
 
 //null
 let e = null;
 console.log(e);
+console.log(typeof e);
 
 //bigInt
 let int = 123456789012345576768;
 console.log(int);
+console.log(typeof int);
 
 //Symbol
-let sm = Symbol ("different value");
+let sm = Symbol("different value");
 console.log(sm);
+console.log(typeof sm);
+
+//NaN
+let nan = NaN;
+console.log(nan);
+console.log(typeof nan);
 
 //object - represents key : value pair
 let obj = {
@@ -37,12 +51,15 @@ let obj = {
     Designation : "Sr. Software Test Engineer"
 }
 console.log(obj);
+console.log(typeof obj);
 
 //array - list of ordered values
 let arr = ["Green" , "Blue", "orange","Red","Pink"];
 let num =["20","30","50","90","60"];
 console.log(arr);
+console.log(typeof arr);
 console.log(num);
+console.log(typeof num);
 
 //Date
 const date = new Date();

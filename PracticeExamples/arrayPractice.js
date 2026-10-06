@@ -58,3 +58,21 @@ let arr1 = [10,20,30];
 let arr2 = [40,50];
 let newArr = arr1.concat(arr2);
 console.log(newArr);
+
+let arr3 = ["Neha","Shipra","Avnish"];
+for(let i of arr3){
+    console.log(i); 
+}
+
+//sort an array
+let arr4 = [5,9,10,3,4,1,2];
+for (let i =0;i<arr4.length;i++){
+    for (let j=i+1;j<arr4.length;j++){
+        if(arr4[i]>arr4[j]){
+            let s = arr4[i];
+            arr4[i]=arr4[j];
+            arr4[j]=s;
+        }
+    }
+}
+console.log(arr4);

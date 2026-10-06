@@ -39,7 +39,7 @@ function foodOrder() {
 //promise consumption-> is done by writing the function name here foorOrder().then(), 
 // .then() have callback function which returns some value from the foodOrder function 
 //.then()-> direct relation with resolve-> for success
-//.cathc() -> direct relation with reject -> for error 
+//.catch() -> direct relation with reject -> for error 
 foodOrder()
     .then(function (message) {   //runs if resolve is called
         console.log(message);

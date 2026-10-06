@@ -1,0 +1,10 @@
+let arr = [10,40,55,66,30,80];
+let iterate = arr[Symbol.iterator]();
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());

@@ -1,3 +1,5 @@
+//error handling lets you catch problems so your program can respond gracefully instead of stopping unexpectedly.
+
 //example 1
 try {
     console.log("Execution starts here...");
@@ -12,7 +14,7 @@ catch(err){
 function myFun(){
     let a = 500;
     try{
-        //let s = a.toUpperCase(); //TypeError: a.toUpperCase is not a function
+        let s = a.toUpperCase(); //TypeError: a.toUpperCase is not a function
         console.log("The value of variable a : " , a);
     }
     catch(e){
@@ -83,3 +85,15 @@ finally{
 //output
 // Transaction failed! error is not defined
 // Transaction completed!
+
+//Throw - allows to manually generate error
+try {
+    let age = 15;
+
+    if (age < 18) {
+        throw new Error("Age must be 18 or above");
+    }
+
+} catch (error) {
+    console.log(error.message);  //Age must be 18 or above
+}

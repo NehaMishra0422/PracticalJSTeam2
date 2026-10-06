@@ -57,5 +57,5 @@ let games = ['Football','Cricket','Vollyball','Basketball','Hockey'];
 console.log("Slice");
 console.log(games);
 let newGames= games.slice(1,3);
-console.log(newGames);
+console.log(newGames); //[ 'Cricket', 'Vollyball' ]
 
