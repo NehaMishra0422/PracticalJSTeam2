@@ -20,27 +20,27 @@ console.log(typeof bool);
 //undefined
 let d ;
 console.log(d);
-console.log(typeof d);
+console.log(typeof d);  //undefined
 
 //null
 let e = null;
 console.log(e);
-console.log(typeof e);
+console.log(typeof e);  //object
 
 //bigInt
 let int = 123456789012345576768;
 console.log(int);
-console.log(typeof int);
+console.log(typeof int);  //number
 
 //Symbol
 let sm = Symbol("different value");
 console.log(sm);
-console.log(typeof sm);
+console.log(typeof sm);  //symbol
 
 //NaN
 let nan = NaN;
 console.log(nan);
-console.log(typeof nan);
+console.log(typeof nan); //Number
 
 //object - represents key : value pair
 let obj = {

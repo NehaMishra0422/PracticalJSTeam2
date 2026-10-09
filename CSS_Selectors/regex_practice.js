@@ -45,6 +45,7 @@ console.log(price1.map(p => p.match(/₹\d{4}/g)));
 
 let date = '24 september 2026';
 console.log(date.match(/\d{4}/g));  //[ '2026' ]
+console.log(date.match(/\w+/g));
 
 let product = ['Samsung' , 'Nokia' , 'Iphone'];
 console.log(product.map(m=> m.match(/Poco|Iphone/g) )); //[ null, null, [ 'Iphone' ] ]
